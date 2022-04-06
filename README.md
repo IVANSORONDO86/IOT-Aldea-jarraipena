@@ -312,37 +312,37 @@ Usuario: **admin** / Contraseña: **iompi**
 
 1.  **Añadimos una nueva BBDD desde Grafana, desde la opción "Data Sources" y elegimos InfluxDB**
 
-![](./Imagenes/6Grafana.png){width="2.2549179790026246in" height="3.0881299212598425in"} ![](./Imagenes/7Grafana.png)
+![](./Imagenes/6Grafana.png) ![](./Imagenes/7Grafana.png)
 
 2.  **En el siguiente paso configuraremos las opciones de conexión con la BBDD**
 
 Le ponemos el nombre que queramos a la conexión (**Name: Dragino_2**), la URL donde está instalado InfluxDB, nuestro caso la propia Raspberry (**localhost:8086**)
 
-![](./Imagenes/8Grafana.png){width="3.670041557305337in" height="3.7761122047244093in"}
+![](./Imagenes/8Grafana.png)
 
 3.  **También añadiremos el nombre de la BBDD que hemos creado con anterioridad en InfluxDB, en el punto 2 del apartado [Usando InfluxDB en su Raspberry Pi](#usando-influxdb-en-su-raspberry-pi) y tanto el usuario como la contraseña del usuario que tenga acceso privilegiado a esa BBDD.**
 
-![](./Imagenes/9Grafana.png){width="3.2177416885389327in" height="2.140495406824147in"}
+![](./Imagenes/9Grafana.png)
 
 4.  **Seleccionamos "Save & test" y el programa nos tiene que devolver el mensaje "Data source is working"**
 
-![](./Imagenes/10_Grafana.png){width="2.3229571303587053in" height="1.0432436570428696in"}
+![](./Imagenes/10_Grafana.png)
 
 5.  **Ahora vamos a la opción de creación del Dashboard**
 
-![](./Imagenes/11_Grafana.png){width="2.6702405949256343in" height="1.506149387576553in"}
+![](./Imagenes/11_Grafana.png)
 
 6.  **Ahora añadiremos un nuevo panel**
 
-![](./Imagenes/12_Grafana.png){width="2.715094050743657in" height="1.842798556430446in"}
+![](./Imagenes/12_Grafana.png)
 
 7.  **Editamos el query del panel para elegir los datos de lectura del nodo**
 
-![](./Imagenes/13_Grafana.png){width="3.788510498687664in" height="1.6438867016622922in"}
+![](./Imagenes/13_Grafana.png)
 
 8.  **Ahora podemos ver los datos visualizados en el gráfico**
 
-![](./Imagenes/14_Grafana.png){width="3.861365923009624in" height="2.4465004374453194in"}
+![](./Imagenes/14_Grafana.png)
 
 9.  **Ahora le daremos a guardar "save" y le podremos un nombre al Dashboard**
 
@@ -354,7 +354,7 @@ Le ponemos el nombre que queramos a la conexión (**Name: Dragino_2**), la URL d
 
 Habrá que elegir el Dashboard que queremos visualizar en el Node-Red y entre las opciones elegir Share. En el Panel "Share Panel" elegir "Embed" y "Copy to clipboard". Este código será el que utilizaremos en Node-Red.
 
-![](./Imagenes/17_Grafana.png){width="3.852989938757655in" height="2.6962773403324585in"}
+![](./Imagenes/17_Grafana.png)
 
 11. **Volviendo a Node-Red en la URL [http://IP:1880/](http://ip:1880/) y seleccionando la opción Dashboard (para ello habremos importado la paleta *node-red-dashboard* con las siguientes opciones disponibles**
 
@@ -368,9 +368,9 @@ Habrá que elegir el Dashboard que queremos visualizar en el Node-Red y entre la
 
 12. **En este punto se añade el nodo de Template al flow de Node-Red y al abrir el template y se edita el "group", "size" y se pega el HTML embebido del punto 10.**
 
-![](./Imagenes/22_Grafana.png){width="3.1325503062117237in" height="1.6255818022747157in"} 
+![](./Imagenes/22_Grafana.png) 
 
-![](./Imagenes/23_Grafana.png){width="4.712057086614173in" height="0.44228674540682417in"}
+![](./Imagenes/23_Grafana.png)
 
 13. **Habrá que ajustar el "Size" así como el "width = 1500" "height=750" para adaptar el tamaño de la pantalla**
 
@@ -378,7 +378,7 @@ Habrá que elegir el Dashboard que queremos visualizar en el Node-Red y entre la
 
 14. **Haz "Deploy" y elige el botón de la flecha. Esto lanzará el Dashboard del Node-Red con el Dashboard de Grafana embebido.**
 
-![](./Imagenes/24_Grafana.png){width="2.9583278652668414in" height="1.6874464129483815in"}
+![](./Imagenes/24_Grafana.png)
 
 
 
@@ -388,21 +388,21 @@ Habrá que elegir el Dashboard que queremos visualizar en el Node-Red y entre la
 
 1.  **Crear una BBDD en phpMyAdmin**
 
-![](./Imagenes/25BD.png){width="3.517166447944007in" height="1.0067968066491688in"}
+![](./Imagenes/25BD.png)
 
 2.  **Crear una tabla para visualizar los datos, con 4 columnas que serán los datos que manejaremos nosotros del nodo, empezando por un id (identificador que será único para cada línea de la tabla)**
 
-![](./Imagenes/26BD.png){width="3.576545275590551in" height="0.7873742344706912in"}
+![](./Imagenes/26BD.png)
 
 3.  **La primera columna será un ID que se autoincrementará y la utilizaremos como el primari key**
 
-![](./Imagenes/27BD.png){width="1.7726192038495188in" height="0.5684350393700788in"}
+![](./Imagenes/27BD.png)
 
 ![](./Imagenes/28BD.png)
 
 4.  **Ahora introducimos los valores de nuestras 3 columnas (Nombre = temperatura, tipo = decimal, longitud/valores = 10,2 y lo mismo para la humedad y por último la fecha de creación del dato (en formato 'datetime' o 'timestamp')**
 
-![](./Imagenes/29BD.png){width="4.136169072615923in" height="2.4311832895888013in"}
+![](./Imagenes/29BD.png)
 
 5.  **Una vez creado la tabla y las columnas volvemos a Node-Red y creamos una nueva función para que los datos se escriban en la BBDD MySQL**
 
@@ -410,21 +410,21 @@ Habrá que elegir el Dashboard que queremos visualizar en el Node-Red y entre la
 
 6.  **Añadimos el nodo de MySQL desde la paleta de opciones y ahora la añadimos a nuestro flow**
 
-![](./Imagenes/31BD.png){width="0.7331036745406824in" height="1.272328302712161in"}
+![](./Imagenes/31BD.png)
 
 ![](./Imagenes/32BD.png)
 
 7.  **Escriba el nombre de su base de datos como la creó anteriormente y asígnele un nombre, luego haga clic en el icono de lápiz junto a la base de datos para editar el nodo sqldatabase.**
 
-![](./Imagenes/33BD.png){width="2.7401957567804023in" height="1.0199617235345582in"}
+![](./Imagenes/33BD.png)
 
 8.  **Editamos el nodo sqldatabse del siguiente modo y nos tiene que aparecer que la BBDD está conectado**
 
-![](./Imagenes/34BD.png){width="1.8609448818897638in" height="1.5943635170603674in"} ![](./Imagenes/35BD.png)
+![](./Imagenes/34BD.png) ![](./Imagenes/35BD.png)
 
 9.  **Nos faltaría conectar los nodos entre sí y ver que funciona todo "ok"**
 
-![](./Imagenes/36BD.png){width="2.509086832895888in" height="2.219122922134733in"}
+![](./Imagenes/36BD.png)
 
 10. **Deberíamos de poder ver los datos que se van escribiendo en nuestra BBDD de MySQL**
 
