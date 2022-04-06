@@ -1,7 +1,3 @@
-
-
-> #### <https://www.youtube.com/watch?v=eVD5CSm58NY> (erabili dudan tutoriala)
-
 #### **Mysql pasahitza**
 
 Mysql password: iombi
