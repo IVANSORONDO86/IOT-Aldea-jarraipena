@@ -1,4 +1,4 @@
-#### **Mysql pasahitza**
+# **Mysql pasahitza**
 
 Mysql password: iombi
 
