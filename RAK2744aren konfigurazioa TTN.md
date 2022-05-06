@@ -144,7 +144,7 @@ Es una buena práctica de seguridad cambiar la contraseña predeterminada " rasp
 
 2.  A continuación, presione "Sí" y se le pedirá que ingrese su nueva contraseña dos veces y luego presione "Enter".
 
-![Confirmar cambio de contraseña](Imagenes/image10.png){width="4.166872265966754in" height="0.7440846456692913in"}
+![Confirmar cambio de contraseña](Imagenes/image10.png)
 
 3.  Muy bien, aparecerá el mensaje de éxito para cambiar la contraseña.
 
