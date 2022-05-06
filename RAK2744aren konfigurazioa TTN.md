@@ -4,7 +4,7 @@
 
 ### **RAK2744 EZAUGARRIAK:**
 
-![](Imagenes/image1.png){width="5.968903105861767in" height="1.2665113735783027in"}
+![](Imagenes/image1.png)
 
 
 
@@ -12,12 +12,12 @@
 
 De forma predeterminada, la puerta de enlace funcionará en modo Wi-Fi AP, lo que significa que puede encontrar un SSID con el nombre "Rakwireless_XXXX" en la lista de redes Wi-Fi de su PC.
 
-![](Imagenes/image2.png){width="6.267716535433071in" height="1.3055555555555556in"}
+![](Imagenes/image2.png)
 
 -   Contraseña de Wi-Fi: `rakwireless`
 -   Dirección IP predeterminada: `192.168.230.1`   
 
-![](Imagenes/image3.png){width="3.7031255468066493in" height="3.6969739720034998in"}
+![](Imagenes/image3.png)
 
 -   Nombre de usuario :  `pi `   
 
@@ -35,7 +35,7 @@ Suponiendo que haya iniciado sesión con éxito en su Gateway usando SSH. Ingres
 
     ​
 
-![](Imagenes/image4.png){width="4.598958880139983in" height="1.9085673665791776in"}
+![](Imagenes/image4.png)
 
 
 
@@ -43,7 +43,7 @@ Suponiendo que haya iniciado sesión con éxito en su Gateway usando SSH. Ingres
 
 Si desea conectarse a través de Wi-Fi, puede hacerlo fácilmente con las capacidades inalámbricas de la Raspberry Pi 4 seleccionando " 5 Configurar WIFI ". De forma predeterminada, RAK7244 WisGate Developer D4 Gateway funciona en modo Wi-Fi AP. Para que la puerta de enlace se conecte al enrutador, debe funcionar en el modo de cliente Wi-Fi.
 
-![](Imagenes/image5.png){width="4.296875546806649in" height="2.079132764654418in"}
+![](Imagenes/image5.png)
 
 Hay 5 opciones para elegir en el menú de configuración de Wi-Fi:
 
@@ -63,7 +63,7 @@ Hay 5 opciones para elegir en el menú de configuración de Wi-Fi:
 
 Una vez que se haya desactivado el modo Wi-Fi AP eligiendo " 2 Habilitar modo cliente / Deshabilitar modo AP ", ahora puede conectarse a una nueva red Wi-Fi eligiendo "4 Agregar nuevo SSID para cliente":
 
-![](Imagenes/image6.png){width="4.369792213473316in" height="2.0935662729658793in"}
+![](Imagenes/image6.png)
 
 Ingrese el SSID de la red a la que desea conectarse:
 
@@ -85,7 +85,7 @@ En caso de que haya ingresado uno o ambos SSID y contraseña de Wi-Fi incorrecto
 
 -   Retire la tarjeta SD de su RAK7244 WisGate Developer D4 Gateway e insértela en su PC. Su PC debería poder detectarlo de la misma manera con la imagen a continuación:
 
-![Creando un archivo rak_ap en su tarjeta SD](Imagenes/image7.png){width="2.8802088801399823in" height="2.2382338145231846in"}
+![Creando un archivo rak_ap en su tarjeta SD](Imagenes/image7.png)
 
 -   Usando su " Símbolo del sistema " o " Terminal ", navegue hasta su tarjeta SD y escriba este comando para generar el archivo " rak_ap ".
 
@@ -106,7 +106,7 @@ Suponiendo que haya iniciado sesión con éxito en su Gateway usando SSH, ingres
 sudo gateway-config
 ```
 
-![](Imagenes/image4.png){width="4.62740813648294in" height="1.921253280839895in"}
+![](Imagenes/image4.png)
 
 1.  *Establecer contraseña pi* : se utiliza para establecer / cambiar la contraseña de la puerta de enlace.
 
@@ -130,7 +130,7 @@ También hay otra forma de obtener su "ID de puerta de enlace", simplemente ingr
     sudo gateway-version
     ```
 
-    ![](Imagenes/image8.png){width="4.901042213473316in" height="1.074646762904637in"}
+    ![](Imagenes/image8.png)
 
 
 
@@ -140,7 +140,7 @@ Es una buena práctica de seguridad cambiar la contraseña predeterminada " rasp
 
 1.  Primero, elija la opción " 1 Establecer contraseña pi " referida en la imagen a continuación.
 
-![](Imagenes/image9.png){width="4.423838582677165in" height="1.72038167104112in"}
+![](Imagenes/image9.png)
 
 2.  A continuación, presione "Sí" y se le pedirá que ingrese su nueva contraseña dos veces y luego presione "Enter".
 
@@ -154,7 +154,7 @@ Es una buena práctica de seguridad cambiar la contraseña predeterminada " rasp
 
 Este menú le permite seleccionar su banda de frecuencia LoRa y una de las dos opciones de Servidor de redes disponibles eligiendo "2 Configurar el concentrador LoRa de puerta de enlace RAK"
 
-![Elección del concentrador Setup RAK Gateway LoRa](Imagenes/image11.jpg){width="4.707277996500437in" height="1.859375546806649in"}
+![Elección del concentrador Setup RAK Gateway LoRa](Imagenes/image11.jpg)
 
 **Figura 25:** Elección de la configuración del concentrador LoRa de puerta de enlace RAK
 
@@ -166,7 +166,7 @@ Puede elegir uno de los dos servidores LoRa compatibles aquí: TTN o ChirpStack 
 
 -   TTN (The Things Network) : si elige TTN como el servidor LoRa, verá la siguiente página. Visite este [artículo (abre una nueva ventana)](https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country.html) para obtener más información sobre su plan de frecuencia TTN local. Esto le permitirá elegir el plan correcto.
 
-![Selección del plan de canales TTN](Imagenes/image12.jpg){width="3.4099004811898515in" height="2.1264512248468943in"}
+![Selección del plan de canales TTN](Imagenes/image12.jpg)
 
 **Figura 27:** Selección del plan de canales TTN
 
@@ -176,8 +176,8 @@ Después de elegir la frecuencia correcta, aparecerá el mensaje de éxito como 
 
 **TTN-ko datuak:**
 
-![](Imagenes/image13.png){width="4.01298009623797in" height="1.9575513998250218in"}
+![](Imagenes/image13.png)
 
-![](Imagenes/image14.png){width="4.329683945756781in" height="4.14346019247594in"}
+![](Imagenes/image14.png)
 
 ![](Imagenes/image15.png)
